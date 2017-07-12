@@ -2,8 +2,8 @@ FROM ruby:2.4
 MAINTAINER nacanori@gmail.com
 
 ENV NVM_DIR /usr/local/nvm
-ENV NVM_VERSION v0.33.0
-ENV NODE_VERSION 6.9.1
+ENV NVM_VERSION v0.33.2
+ENV NODE_VERSION 6.11.1
 ENV YARN_VERSION 0.16.1
 
 # install mpdejs with nvm
