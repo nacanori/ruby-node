@@ -1,6 +1,8 @@
 FROM ruby:2.4
 MAINTAINER nacanori@gmail.com
 
+WORKDIR /usr/src/app
+
 ENV NVM_DIR /usr/local/nvm
 ENV NVM_VERSION v0.33.2
 ENV NODE_VERSION 6.11.1
