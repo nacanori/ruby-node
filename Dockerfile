@@ -17,3 +17,5 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.s
     && nvm alias default $NODE_VERSION \
     && nvm use default \
     && npm install --global yarn@$YARN_VERSION
+
+CMD ["/bin/bash"]
