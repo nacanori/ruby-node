@@ -10,7 +10,7 @@ ENV YARN_VERSION 0.27.5
 
 # install mpdejs with nvm
 RUN apt-get update
-RUN apt-get install -y vim git curl
+RUN apt-get install -y vim git curl nodejs
 RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
