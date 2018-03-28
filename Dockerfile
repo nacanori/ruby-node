@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 ENV NVM_DIR /usr/local/nvm
 ENV NVM_VERSION v0.33.2
 ENV NODE_VERSION 8.10.0
-ENV YARN_VERSION 0.27.5
+ENV YARN_VERSION 1.5.1
 
 RUN apt-get update -qq
 
