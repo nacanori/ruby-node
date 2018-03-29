@@ -1,5 +1,6 @@
 FROM ruby:2.4
 MAINTAINER nacanori@gmail.com
+ENV LANG C.UTF-8
 
 RUN mkdir -p $HOME/.ssh
 
