@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.4.5
 MAINTAINER nacanori@gmail.com
 
 RUN mkdir -p $HOME/.ssh
