@@ -1,5 +1,6 @@
 FROM ruby:2.4
-MAINTAINER nacanori@gmail.com
+LABEL maintainer "nacanori@gmail.com"
+
 
 RUN mkdir -p $HOME/.ssh
 
