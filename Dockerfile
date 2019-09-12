@@ -24,6 +24,7 @@ RUN apt-get install -y libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-
 
 # for a JS runtime
 RUN apt-get install -y nodejs
+RUN mkdir $NVM_DIR
 RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
