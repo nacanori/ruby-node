@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 ENV NVM_DIR /usr/local/nvm
 ENV NVM_VERSION v0.35.1
-ENV NODE_VERSION 12.13.1
+ENV NODE_VERSION 13.5.0
 ENV YARN_VERSION 1.21.1
 
 RUN apt-get update -qq
@@ -30,6 +30,9 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.s
     && nvm install $NODE_VERSION \
     && nvm alias default $NODE_VERSION \
     && nvm use default \
-    && npm install --global yarn@$YARN_VERSION
+    && npm install --global yarn@$YARN_VERSION \
+    && npm install --global n \
+    && n latest
+    
 
 CMD ["/bin/bash"]
